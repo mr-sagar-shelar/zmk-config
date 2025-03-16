@@ -1,5 +1,5 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
+// #define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // default: 600
+// #define ZMK_POINTING_DEFAULT_SCRL_VAL 20    // default: 10
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
@@ -35,10 +35,10 @@
                 };
                 second_layer {
                         bindings = <
-        &trans      &trans           &trans           &trans         &trans          &trans               &trans           &trans        &trans              &trans        &trans           &trans
-        &trans      &trans           &mkp MB3         &mkp MB2       &mkp MB1        &trans               &kp HOME         &kp UARW      &msc SCRL_UP        &trans        &trans           &kp PG_UP
-        &trans      &mmv MOVE_LEFT   &mmv MOVE_DOWN   &mmv MOVE_UP   &mmv MOVE_RIGHT &trans               &kp LARW         &kp BSPC      &kp DEL             &kp RARW      &kp END          &kp PG_DN
-        &trans      &trans           &trans           &trans         &trans          &trans               &msc SCRL_LEFT   &kp DARW      &msc SCRL_DOWN      &trans        &trans           &msc SCRL_RIGHT
+        &trans      &trans           &trans           &trans         &trans            &trans               &trans           &trans        &trans              &trans        &trans           &trans
+        &trans      &trans           &trans           &mkp MB3       &mmv MOVE_UP      &mkp MB1             &kp HOME         &kp UARW      &msc SCRL_UP        &trans        &trans           &kp PG_UP
+        &trans      &trans           &trans           &trans         &mmv MOVE_LEFT    &mmv MOVE_RIGHT      &kp LARW         &kp BSPC      &kp DEL             &kp RARW      &kp END          &kp PG_DN
+        &trans      &trans           &trans           &trans         &mmv MOVE_DOWN    &mkp MB2             &msc SCRL_LEFT   &kp DARW      &msc SCRL_DOWN      &trans        &trans           &msc SCRL_RIGHT
                         >;
                 };
         };
